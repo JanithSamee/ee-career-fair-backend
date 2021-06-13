@@ -38,3 +38,7 @@ npm install
 ```
 npm run serve
 ```
+
+### Contributing
+
+Please refer this how to [contribute wiki](https://github.com/chris7716/ee-career-fair-backend/wiki/How-to-contribute)
