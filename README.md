@@ -34,6 +34,10 @@ cd functions
 ```
 firebase functions:config:get > .runtimeconfig.json
 ```
+**For Windows**
+```
+firebase functions:config:get | sc .runtimeconfig.json
+```
 - Run the following commands to install node packages
 ```
 npm install
