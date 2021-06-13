@@ -12,7 +12,7 @@ cd ee-career-fair-backend
 - Add a Firestore database to the application.
 - Enable Email/Password authenntication in Authentication service.
 - Copy `Project ID` from Project Settings.
-- Add it in the `.firebaserc` file as how default project is added. Ex: 
+- Add and save it in the `.firebaserc` file as how default project is added. Ex: 
 ```
 {
   "projects": {
