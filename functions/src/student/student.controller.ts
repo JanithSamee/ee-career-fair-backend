@@ -2,9 +2,9 @@ import { Request, Response } from "express";
 import * as admin from 'firebase-admin';
 
 export async function createStudent(req: Request, res: Response) {
-    const user = req.body;
+    const student = req.body;
 
-    await admin.firestore().collection('user').add(user);
+    await admin.firestore().collection('student').add(student);
 
     return res.status(201).send();
 }
