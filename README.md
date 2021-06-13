@@ -3,7 +3,7 @@ This is the backend of virtual career fair hosted by the Department of Electrica
 
 ### How to setup
 - Create a directory called `careerfair`
-- Navigate to it (`cd careerfair`), then [fork and clone](https://docs.github.com/en/github/getting-started-with-github/quickstart/fork-a-repo) (why?) the repo so that it gets downloaded into careerfair/ee-career-fair-backend.
+- Navigate to it (`cd careerfair`), then [fork and clone](https://docs.github.com/en/github/getting-started-with-github/quickstart/fork-a-repo) the repo so that it gets downloaded into careerfair/ee-career-fair-backend.
 - Create a firebase application in your firebase console.
 - Add a Firestore database to the application.
 - Enable Email/Password authenntication in Authentication service.
