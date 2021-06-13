@@ -24,7 +24,7 @@ firebase functions:config:set app.apikey="API_KEY" app.authdomain="AUTH_DOMAIN" 
 ```
 - Go inside to functions directory
 ```
-cd function
+cd functions
 ```
 - Run the following command to get the above environment variables to runtime.
 ```
