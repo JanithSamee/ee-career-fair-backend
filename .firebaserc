@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "ee-career-fair-pvt"
+    "default": "fir-app-xyz",
+    "my-project": "ee-career-fair-backend"
   }
 }
