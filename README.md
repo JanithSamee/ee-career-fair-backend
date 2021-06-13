@@ -22,7 +22,7 @@ cd ee-career-fair-backend
 }
 ```
 - Run `firebase use my-project` to user the project you created in your firebase console.
-- Run following command to set environment variables required in project. These variables can be taken from `Project Settings` -> `General` in your firebase app in console. ([More info](https://firebase.google.com/docs/web/setup#add-sdks-initialize))
+- Run following command to set environment variables required in project. These variables can be taken from `Project Settings` -> `General` in your firebase app in console. You can get these settings from Create Web App section at the bottom of General Settings. ([More info](https://firebase.google.com/docs/web/setup#add-sdks-initialize))
 ```
 firebase functions:config:set app.apikey="API_KEY" app.authdomain="AUTH_DOMAIN" app.projectid="PROJECT_ID" app.storagebucket="STORAGE_BUCKET" app.senderid="SENDER_ID" app.appid="APP_ID" app.measurementid="MEASUREMENT_ID"
 ```
