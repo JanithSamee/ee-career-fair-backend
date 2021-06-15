@@ -6,6 +6,7 @@ import * as cors from 'cors';
 import * as bodyParser from 'body-parser';
 import routes from './router';
 
+
 const app = express();
 app.use(bodyParser.json());
 app.use(cors({ origin: true }));
@@ -36,5 +37,22 @@ firebase.initializeApp(firebaseConfig);
 //     credential: admin.credential.cert(serviceAccount)
 // });
 admin.initializeApp();
+
+exports.onuserchange = functions.auth.user().onCreate((user:any) => {
+    let collectionName = "Not Specified";
+    if (user.email.endsWith("@uom.lk")) {
+      collectionName = "students";
+    }
+    if (user.email.endsWith("@company.lk")) {
+      collectionName = "companies";
+    }
+    admin.firestore().collection(collectionName).doc(user.uid).set({
+      name: user.displayName,
+      email: user.email,
+      profile_avatar: user.photoURL,
+      usertype: collectionName,
+    });
+    console.log("user added!");
+  });
 
 export const api = functions.https.onRequest(app);
